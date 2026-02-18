@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dIAloga - Planes y Precios</title>
+    <title>dIAloga — Planes y Precios | Plataforma ODR con IA</title>
     <meta name="description"
-        content="Planes de dIAloga: Soluciones para ciudadanos, mediadores, centros y grandes empresas.">
+        content="Planes de dIAloga: Soluciones adaptadas para ciudadanos, mediadores independientes, centros de mediación y grandes empresas.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -27,10 +27,16 @@
                 <a href="index.html#beneficios">Beneficios</a>
                 <a href="pricing.html" class="active-link">Planes</a>
                 <a href="index.html#proposito">Propósito</a>
-                <a href="login.html" class="btn btn-secondary" style="border: none; padding: 0.5rem 1rem;">Ingresar al
-                    sistema</a>
+                <a href="login.html" class="btn btn-secondary">Ingresar al sistema</a>
                 <a href="index.html#contacto" class="btn btn-primary">Solicitar Demo</a>
             </div>
+            <button class="mobile-menu-toggle" aria-label="Abrir menú">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
         </div>
     </nav>
 
@@ -49,7 +55,7 @@
             <div class="grid pricing-grid">
 
                 <!-- Tier 1: Assist -->
-                <div class="card pricing-card">
+                <div class="card pricing-card reveal reveal-delay-1">
                     <div class="pricing-header-card">
                         <h3 class="pricing-title">dIAloga Assist</h3>
                         <p class="pricing-subtitle">Ciudadanos</p>
@@ -70,7 +76,7 @@
                 </div>
 
                 <!-- Tier 2: Pro -->
-                <div class="card pricing-card popular">
+                <div class="card pricing-card popular reveal reveal-delay-2">
                     <div class="popular-tag">Más Popular</div>
                     <div class="pricing-header-card">
                         <h3 class="pricing-title">dIAloga Pro</h3>
@@ -91,7 +97,7 @@
                 </div>
 
                 <!-- Tier 3: Hub -->
-                <div class="card pricing-card">
+                <div class="card pricing-card reveal reveal-delay-3">
                     <div class="pricing-header-card">
                         <h3 class="pricing-title">dIAloga Hub</h3>
                         <p class="pricing-subtitle">Centros de Mediación</p>
@@ -112,7 +118,7 @@
                 </div>
 
                 <!-- Tier 4: Enterprise -->
-                <div class="card pricing-card">
+                <div class="card pricing-card reveal reveal-delay-4">
                     <div class="pricing-header-card">
                         <h3 class="pricing-title">dIAloga Enterprise</h3>
                         <p class="pricing-subtitle">Bancos y Grandes Empresas</p>
@@ -143,7 +149,7 @@
                 <a href="index.html" class="logo text-white">
                     <img src="images/logo2.png" alt="dIAloga Logo" class="logo-img-footer">
                 </a>
-                <p class="copyright">&copy; 2024 dIAloga. Todos los derechos reservados.</p>
+                <p class="copyright">&copy; 2025 dIAloga by Quartz Solution. Todos los derechos reservados.</p>
             </div>
             <div class="footer-links">
                 <a href="#">Aviso Legal</a>
@@ -151,6 +157,26 @@
             </div>
         </div>
     </footer>
+
+    <!-- Scroll Reveal Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const revealElements = document.querySelectorAll('.reveal');
+            if ('IntersectionObserver' in window) {
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('revealed');
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.15, rootMargin: '0px 0px -50px 0px' });
+                revealElements.forEach(el => observer.observe(el));
+            } else {
+                revealElements.forEach(el => el.classList.add('revealed'));
+            }
+        });
+    </script>
 
 </body>
 

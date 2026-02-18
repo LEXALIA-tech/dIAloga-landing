@@ -1,240 +1,424 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dIAloga - Resolver con Propósito</title>
-    <meta name="description"
-        content="dIAloga: Plataforma de Online Dispute Resolution (ODR) con IA para humanizar y optimizar la mediación. Resolver con propósito.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      dIAloga — Resuelve Conflictos con Propósito | Plataforma ODR con IA
+    </title>
+    <meta
+      name="description"
+      content="dIAloga: Plataforma de mediación inteligente (ODR) con IA que resuelve conflictos en días, no en años. Descongestiona la justicia y acerca soluciones reales."
+    />
+    <meta
+      name="keywords"
+      content="mediación, ODR, resolución de conflictos, inteligencia artificial, legaltech, Ecuador"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-</head>
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<body>
-
+  <body>
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="container nav-container">
-            <a href="#" class="logo">
-                <img src="images/logo.png" alt="dIAloga Logo" class="logo-img">
-            </a>
-            <div class="nav-links">
-                <a href="#beneficios">Beneficios</a>
-                <a href="pricing.html">Planes</a>
-                <a href="#proposito">Propósito</a>
-                <a href="login.html" class="btn btn-secondary" style="border: none; padding: 0.5rem 1rem;">Ingresar al
-                    sistema</a>
-                <a href="#contacto" class="btn btn-primary">Solicitar Demo</a>
-            </div>
+      <div class="container nav-container">
+        <a href="#" class="logo">
+          <img src="images/logo.png" alt="dIAloga Logo" class="logo-img" />
+        </a>
+        <div class="nav-links">
+          <a href="#beneficios">Beneficios</a>
+          <a href="pricing.html">Planes</a>
+          <a href="#proposito">Propósito</a>
+          <a href="login.html" class="btn btn-secondary">Ingresar al sistema</a>
+          <a href="#contacto" class="btn btn-primary">Solicitar Demo</a>
         </div>
+        <button class="mobile-menu-toggle" aria-label="Abrir menú">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </button>
+      </div>
     </nav>
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="container hero-container">
-            <div class="hero-content">
-                <h1 class="hero-title">El futuro de la mediación es <span class="text-gradient">inteligente</span> y con
-                    <span class="text-gradient">propósito</span>.
-                </h1>
-                <p class="hero-subtitle">dIAloga no nació simplemente como una herramienta tecnológica, sino como una
-                    respuesta a la saturación del sistema judicial y a la necesidad de encontrar soluciones humanas
-                    potenciadas por la inteligencia artificial.</p>
-                <div class="hero-actions">
-                    <a href="#contacto" class="btn btn-primary btn-lg">Solicitar Demo</a>
-                    <a href="#proposito" class="btn btn-secondary btn-lg">Conoce más</a>
-                </div>
-            </div>
-            <!-- Optional: Abstract geometric visual or dashboard mockup could go here -->
-            <div class="hero-visual">
-                <div class="abstract-shape"></div>
-            </div>
+      <div class="container hero-container">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            Resuelve conflictos en <span class="text-gradient">días</span>, no
+            en <span class="text-gradient">años</span>
+          </h1>
+          <p class="hero-subtitle">
+            Plataforma de mediación inteligente que descongestiona el sistema
+            judicial y acerca soluciones reales con inteligencia artificial.
+          </p>
+          <div class="hero-actions">
+            <a href="#contacto" class="btn btn-primary btn-lg"
+              >Ver dIAloga en Acción</a
+            >
+            <a href="#proposito" class="btn btn-secondary btn-lg">Conoce más</a>
+          </div>
         </div>
+        <div class="hero-visual">
+          <div class="node-network">
+            <div class="glow-orb"></div>
+            <!-- Nodes -->
+            <div class="node node-lg"></div>
+            <div class="node node-md"></div>
+            <div class="node node-lg node-warm"></div>
+            <div class="node node-sm"></div>
+            <div class="node node-md"></div>
+            <div class="node node-sm node-warm"></div>
+            <div class="node node-lg"></div>
+            <div class="node node-sm"></div>
+            <div class="node node-md"></div>
+            <!-- Connecting lines -->
+            <div class="node-line"></div>
+            <div class="node-line"></div>
+            <div class="node-line"></div>
+            <div class="node-line"></div>
+            <div class="node-line"></div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Benefits Section -->
     <section id="beneficios" class="section benefits">
-        <div class="container">
-            <h2 class="section-title text-center">Beneficios</h2>
-            <div class="grid benefits-grid">
-                <!-- Benefit 1 -->
-                <div class="card benefit-card">
-                    <div class="card-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5m.75-9l3-3 2.148 2.148A12.061 12.061 0 0116.5 7.605" />
-                        </svg>
-                    </div>
-                    <h3>Eficiencia Operativa</h3>
-                    <p>Automatiza tareas repetitivas, permitiendo un ahorro significativo de horas-hombre para
-                        mediadores y centros de resolución de conflictos.</p>
-                </div>
-                <!-- Benefit 2 -->
-                <div class="card benefit-card">
-                    <div class="card-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
-                    </div>
-                    <h3>Descongestionamiento</h3>
-                    <p>Al resolver disputas de manera extrajudicial y ágil, reduce la carga sobre la Función Judicial y
-                        los sistemas tradicionales.</p>
-                </div>
-                <!-- Benefit 3 -->
-                <div class="card benefit-card">
-                    <div class="card-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941" />
-                        </svg>
-                    </div>
-                    <h3>Escalabilidad</h3>
-                    <p>Permite aumentar el número de mediaciones que un solo facilitador puede gestionar, sin perder la
-                        calidad del proceso.</p>
-                </div>
-                <!-- Benefit 4 -->
-                <div class="card benefit-card">
-                    <div class="card-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
-                        </svg>
-                    </div>
-                    <h3>Accesibilidad</h3>
-                    <p>Reduce drásticamente los costos y tiempos por caso, haciendo que la mediación sea una opción
-                        viable para un espectro más amplio de la sociedad.</p>
-                </div>
-                <!-- Benefit 5 -->
-                <div class="card benefit-card">
-                    <div class="card-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.383a14.406 14.406 0 01-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 10-7.517 0c.85.493 1.509 1.333 1.509 2.316V18" />
-                        </svg>
-                    </div>
-                    <h3>IA con Propósito</h3>
-                    <p>Utiliza la inteligencia artificial no para reemplazar al humano, sino para asistir en la creación
-                        de puentes de comunicación y facilitar el consenso.</p>
-                </div>
+      <div class="container">
+        <h2 class="section-title text-center reveal">¿Por qué dIAloga?</h2>
+        <div class="grid benefits-grid">
+          <!-- Benefit 1 -->
+          <div class="card benefit-card reveal reveal-delay-1">
+            <div class="card-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5m.75-9l3-3 2.148 2.148A12.061 12.061 0 0116.5 7.605"
+                />
+              </svg>
             </div>
+            <h3>Eficiencia Operativa</h3>
+            <p>
+              Reduce el tiempo de gestión por caso hasta un 70%. La IA
+              automatiza las tareas repetitivas para que los mediadores se
+              enfoquen en lo que importa: las personas.
+            </p>
+          </div>
+          <!-- Benefit 2 -->
+          <div class="card benefit-card reveal reveal-delay-2">
+            <div class="card-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+            </div>
+            <h3>Descongestionamiento Judicial</h3>
+            <p>
+              Cada caso resuelto en dIAloga es un caso menos en tribunales.
+              Filtra y soluciona disputas de forma extrajudicial, liberando
+              recursos del sistema de justicia.
+            </p>
+          </div>
+          <!-- Benefit 3 -->
+          <div class="card benefit-card reveal reveal-delay-3">
+            <div class="card-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941"
+                />
+              </svg>
+            </div>
+            <h3>Escalabilidad Sin Límites</h3>
+            <p>
+              Un solo mediador puede gestionar 3x más casos simultáneos sin
+              sacrificar calidad. La plataforma crece contigo.
+            </p>
+          </div>
+          <!-- Benefit 4 -->
+          <div class="card benefit-card reveal reveal-delay-4">
+            <div class="card-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z"
+                />
+              </svg>
+            </div>
+            <h3>Acceso para Todos</h3>
+            <p>
+              Costos reducidos hasta un 80% frente a procesos tradicionales. La
+              mediación deja de ser un privilegio y se convierte en un derecho
+              accesible.
+            </p>
+          </div>
+          <!-- Benefit 5 -->
+          <div class="card benefit-card reveal reveal-delay-5">
+            <div class="card-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.383a14.406 14.406 0 01-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 10-7.517 0c.85.493 1.509 1.333 1.509 2.316V18"
+                />
+              </svg>
+            </div>
+            <h3>IA con Propósito</h3>
+            <p>
+              La inteligencia artificial no reemplaza al mediador — lo potencia.
+              Asiste en la creación de puentes de comunicación y facilita
+              consensos reales.
+            </p>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Purpose Section -->
     <section id="proposito" class="section purpose">
-        <div class="container purpose-container">
-            <div class="purpose-content">
-                <h2 class="section-title text-white">Propósito Central</h2>
-                <p class="text-lg text-light">
-                    El propósito fundamental de dIAloga es desescalar la conflictividad social y acercar la sensación de
-                    justicia a las personas. Reconoce que el acceso a la justicia tradicional es, a menudo, lento,
-                    costoso y emocionalmente desgastante, por lo que busca democratizar el acceso a acuerdos a través de
-                    un ecosistema de ODR (Online Dispute Resolution) que pone el propósito y la eficiencia en el centro.
-                </p>
-            </div>
+      <div class="container purpose-container">
+        <div class="purpose-content reveal">
+          <h2 class="section-title text-white">Propósito Central</h2>
+          <p>
+            Desescalar la conflictividad social y acercar la sensación de
+            justicia a las personas. Porque el acceso a la justicia no debería
+            ser lento, costoso ni emocionalmente desgastante. dIAloga
+            democratiza el acceso a acuerdos a través de un ecosistema de ODR
+            que pone el propósito y la eficiencia en el centro.
+          </p>
         </div>
+      </div>
     </section>
 
     <!-- Ecosystem Section -->
     <section id="ecosistema" class="section ecosystem">
-        <div class="container">
-            <h2 class="section-title text-center">Una solución integral para todo el ecosistema</h2>
-            <p class="text-center" style="max-width: 800px; margin: 0 auto 2rem; color: var(--secondary-color);">dIAloga
-                impacta en varios niveles del ecosistema legal y social, diseñada específicamente para:</p>
-            <div class="grid ecosystem-grid">
-                <!-- Group 1 -->
-                <div class="card ecosystem-card">
-                    <h3>1. Centros de Mediación y Arbitraje</h3>
-                    <p>Herramienta principal para centros que buscan automatizar su operación. Gestiona mayor volumen de
-                        casos reduciendo la carga administrativa.</p>
-                </div>
-                <!-- Group 2 -->
-                <div class="card ecosystem-card">
-                    <h3>2. Mediadores Independientes</h3>
-                    <p>Asistente inteligente para potenciar tu capacidad. Estructura acuerdos y gestiona la comunicación
-                        para liderar más mediaciones simultáneas sin sacrificar calidad.</p>
-                </div>
-                <!-- Group 3 -->
-                <div class="card ecosystem-card">
-                    <h3>3. Estudios Jurídicos</h3>
-                    <p>Vía de ODR eficiente para firmas y consultorios jurídicos. Permite que la justicia llegue a
-                        sectores que no pueden costear procesos largos.</p>
-                </div>
-                <!-- Group 4 -->
-                <div class="card ecosystem-card">
-                    <h3>4. La Función Judicial y el Estado</h3>
-                    <p>Aliada del sistema público para descongestionar tribunales. Filtra y resuelve conflictos de forma
-                        extrajudicial, permitiendo enfoque en casos complejos.</p>
-                </div>
-                <!-- Group 5 -->
-                <div class="card ecosystem-card">
-                    <h3>5. Usuarios Finales</h3>
-                    <p>Para ciudadanos y empresas que necesitan resolver problemas de forma rápida, económica y con
-                        propósito, evitando el desgaste de juicios tradicionales.</p>
-                </div>
-            </div>
+      <div class="container">
+        <h2 class="section-title text-center reveal">
+          Una solución para todo el ecosistema
+        </h2>
+        <p
+          class="text-center reveal"
+          style="
+            max-width: 700px;
+            margin: -2rem auto 3rem;
+            color: var(--text-light);
+          "
+        >
+          dIAloga impacta en cada nivel del sistema legal y social.
+        </p>
+        <div class="grid ecosystem-grid">
+          <!-- Group 1 -->
+          <div class="card ecosystem-card reveal reveal-delay-1">
+            <h3>1. Centros de Mediación</h3>
+            <p>
+              Automatiza tu operación y gestiona mayor volumen de casos
+              reduciendo la carga administrativa hasta un 60%.
+            </p>
+          </div>
+          <!-- Group 2 -->
+          <div class="card ecosystem-card reveal reveal-delay-2">
+            <h3>2. Mediadores Independientes</h3>
+            <p>
+              Tu asistente inteligente que estructura acuerdos y gestiona la
+              comunicación para liderar más mediaciones simultáneas.
+            </p>
+          </div>
+          <!-- Group 3 -->
+          <div class="card ecosystem-card reveal reveal-delay-3">
+            <h3>3. Estudios Jurídicos</h3>
+            <p>
+              Vía de ODR eficiente para que la justicia llegue a sectores que no
+              pueden costear procesos largos.
+            </p>
+          </div>
+          <!-- Group 4 -->
+          <div class="card ecosystem-card reveal reveal-delay-4">
+            <h3>4. La Función Judicial</h3>
+            <p>
+              Aliada del sistema público para descongestionar tribunales. Filtra
+              y resuelve conflictos de forma extrajudicial.
+            </p>
+          </div>
+          <!-- Group 5 -->
+          <div class="card ecosystem-card reveal reveal-delay-5">
+            <h3>5. Usuarios Finales</h3>
+            <p>
+              Para ciudadanos y empresas que necesitan resolver problemas de
+              forma rápida, económica y con propósito.
+            </p>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Contact Form Section -->
     <section id="contacto" class="section contact">
-        <div class="container contact-wrapper">
-            <div class="form-container">
-                <h2 class="form-title">Agenda una sesión personalizada</h2>
-                <p class="form-subtitle">Descubre cómo dIAloga puede transformar tu gestión de conflictos.</p>
-                <form class="contact-form" action="#" method="POST">
-                    <div class="form-group">
-                        <label for="name">Nombre completo</label>
-                        <input type="text" id="name" name="name" placeholder="Tu nombre" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="city">Ciudad</label>
-                        <input type="text" id="city" name="city" placeholder="Ciudad (Jurisdicción)" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Teléfono de contacto</label>
-                        <input type="tel" id="phone" name="phone" placeholder="WhatsApp preferido" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Correo electrónico profesional</label>
-                        <input type="email" id="email" name="email" placeholder="nombre@empresa.com" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="company">Centro de mediación o Empresa</label>
-                        <input type="text" id="company" name="company" placeholder="Opcional">
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-block">Solicitar Demo</button>
-                </form>
+      <div class="container contact-wrapper">
+        <div class="form-container reveal">
+          <h2 class="form-title">Agenda una sesión personalizada</h2>
+          <p class="form-subtitle">
+            Descubre cómo dIAloga puede transformar tu gestión de conflictos.
+          </p>
+          <form class="contact-form" action="#" method="POST">
+            <div class="form-group">
+              <label for="name">Nombre completo</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Tu nombre"
+                required
+              />
             </div>
+            <div class="form-group">
+              <label for="city">Ciudad</label>
+              <input
+                type="text"
+                id="city"
+                name="city"
+                placeholder="Ciudad (Jurisdicción)"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="phone">Teléfono de contacto</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="WhatsApp preferido"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Correo electrónico profesional</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="nombre@empresa.com"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="company">Centro de mediación o Empresa</label>
+              <input
+                type="text"
+                id="company"
+                name="company"
+                placeholder="Opcional"
+              />
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">
+              Ver dIAloga en Acción
+            </button>
+          </form>
         </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container footer-content">
-            <div class="footer-logo">
-                <a href="#" class="logo text-white">
-                    <img src="images/logo2.png" alt="dIAloga Logo" class="logo-img-footer">
-                </a>
-                <p class="copyright">&copy; 2024 dIAloga. Todos los derechos reservados.</p>
-            </div>
-            <div class="footer-links">
-                <a href="#">Aviso Legal</a>
-                <a href="#">Política de Privacidad</a>
-            </div>
+      <div class="container footer-content">
+        <div class="footer-logo">
+          <a href="#" class="logo text-white">
+            <img
+              src="images/logo2.png"
+              alt="dIAloga Logo"
+              class="logo-img-footer"
+            />
+          </a>
+          <p class="copyright">
+            &copy; 2025 dIAloga by Quartz Solution. Todos los derechos
+            reservados.
+          </p>
         </div>
+        <div class="footer-links">
+          <a href="#">Aviso Legal</a>
+          <a href="#">Política de Privacidad</a>
+        </div>
+      </div>
     </footer>
 
-</body>
+    <!-- Scroll Reveal Script -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const revealElements = document.querySelectorAll(".reveal");
 
+        if ("IntersectionObserver" in window) {
+          const observer = new IntersectionObserver(
+            (entries) => {
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                  entry.target.classList.add("revealed");
+                  observer.unobserve(entry.target);
+                }
+              });
+            },
+            {
+              threshold: 0.15,
+              rootMargin: "0px 0px -50px 0px",
+            },
+          );
+
+          revealElements.forEach((el) => observer.observe(el));
+        } else {
+          // Fallback: show everything
+          revealElements.forEach((el) => el.classList.add("revealed"));
+        }
+      });
+    </script>
+  </body>
 </html>
