@@ -589,11 +589,11 @@ section[id] {
   gap: 1.5rem;
 }
 
-.benefit-card:nth-child(-n+2) {
+.benefit-card:nth-child(-n + 2) {
   flex: 1 1 calc(50% - 0.75rem);
 }
 
-.benefit-card:nth-child(n+3) {
+.benefit-card:nth-child(n + 3) {
   flex: 1 1 calc(33.333% - 1rem);
 }
 
@@ -779,11 +779,11 @@ section[id] {
   gap: 1.5rem;
 }
 
-.ecosystem-card:nth-child(-n+3) {
+.ecosystem-card:nth-child(-n + 3) {
   flex: 1 1 calc(33.333% - 1rem);
 }
 
-.ecosystem-card:nth-child(n+4) {
+.ecosystem-card:nth-child(n + 4) {
   flex: 1 1 calc(50% - 0.75rem);
 }
 
@@ -1116,10 +1116,10 @@ section[id] {
 /* ─── Bento grid: tablet breakpoint ─── */
 @media (max-width: 1024px) {
   /* Flex grids: 2 por fila en tablet */
-  .benefit-card:nth-child(-n+2),
-  .benefit-card:nth-child(n+3),
-  .ecosystem-card:nth-child(-n+3),
-  .ecosystem-card:nth-child(n+4) {
+  .benefit-card:nth-child(-n + 2),
+  .benefit-card:nth-child(n + 3),
+  .ecosystem-card:nth-child(-n + 3),
+  .ecosystem-card:nth-child(n + 4) {
     flex: 1 1 calc(50% - 0.75rem);
   }
 
@@ -1215,10 +1215,10 @@ section[id] {
   }
 
   /* Flex grids: apilados en móvil */
-  .benefit-card:nth-child(-n+2),
-  .benefit-card:nth-child(n+3),
-  .ecosystem-card:nth-child(-n+3),
-  .ecosystem-card:nth-child(n+4) {
+  .benefit-card:nth-child(-n + 2),
+  .benefit-card:nth-child(n + 3),
+  .ecosystem-card:nth-child(-n + 3),
+  .ecosystem-card:nth-child(n + 4) {
     flex: 1 1 100%;
   }
 
