@@ -40,16 +40,18 @@
   <body class="login-page">
     <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
 
-    <!-- Navigation (Simplificada) -->
-    <nav class="navbar relative-nav" role="navigation" aria-label="Navegación">
+    <!-- Navigation -->
+    <nav
+      class="navbar relative-nav"
+      role="navigation"
+      aria-label="Navegación principal"
+    >
       <div class="container nav-container">
         <a href="index.html" class="logo">
           <img
             src="images/logo.png"
             alt="dIAloga"
             class="logo-img"
-            width="120"
-            height="40"
             fetchpriority="high"
           />
         </a>
@@ -64,7 +66,15 @@
           <span></span>
         </button>
         <div class="nav-links" id="nav-links">
-          <a href="index.html" class="btn btn-secondary">Volver al Inicio</a>
+          <a href="index.html#beneficios">Beneficios</a>
+          <a href="pricing.html">Planes</a>
+          <a href="index.html#proposito">Propósito</a>
+          <a href="login.html" class="btn btn-secondary btn-login"
+            >Ingresar al sistema</a
+          >
+          <a href="index.html#contacto" class="btn btn-primary"
+            >Solicitar Demo</a
+          >
         </div>
       </div>
     </nav>
@@ -87,7 +97,7 @@
           <div class="grid login-grid">
             <!-- Card 1: Personas -->
             <a
-              href="#"
+              href="https://dialoga.quartz-solution.com"
               class="card login-card"
               aria-label="Ingresar como Persona Natural"
             >
@@ -118,7 +128,7 @@
 
             <!-- Card 2: Mediadores -->
             <a
-              href="#"
+              href="https://dialoga.quartz-solution.com"
               class="card login-card"
               aria-label="Ingresar como Mediador"
             >
@@ -149,7 +159,7 @@
 
             <!-- Card 3: Centros de Mediación -->
             <a
-              href="#"
+              href="https://dialoga.quartz-solution.com"
               class="card login-card"
               aria-label="Ingresar como Centro de Mediación"
             >
@@ -180,7 +190,7 @@
 
             <!-- Card 4: Empresas -->
             <a
-              href="#"
+              href="https://dialoga.quartz-solution.com"
               class="card login-card"
               aria-label="Ingresar como Empresa"
             >
@@ -232,8 +242,18 @@
           </p>
         </div>
         <div class="footer-links">
-          <a href="#">Aviso Legal</a>
-          <a href="#">Política de Privacidad</a>
+          <a
+            href="https://dialoga.quartz-solution.com/terminos"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Aviso Legal</a
+          >
+          <a
+            href="https://dialoga.quartz-solution.com/privacidad"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Política de Privacidad</a
+          >
         </div>
       </div>
     </footer>
@@ -258,6 +278,13 @@
             toggle.setAttribute("aria-label", "Abrir men\u00FA");
             toggle.focus();
           }
+        });
+        links.querySelectorAll("a").forEach(function (a) {
+          a.addEventListener("click", function () {
+            links.classList.remove("is-open");
+            toggle.setAttribute("aria-expanded", "false");
+            toggle.setAttribute("aria-label", "Abrir men\u00FA");
+          });
         });
       })();
     </script>
